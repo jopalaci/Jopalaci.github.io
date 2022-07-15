@@ -1,0 +1,118 @@
+.page {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+.top-tags {
+    bottom:auto;
+    top:35px;
+}
+
+.tags {
+    color: #ffffff;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
+
+.bottom-tag-html {
+    margin-left: -20px;
+    font-size: 16px;
+    // animation: fadeIn 1s 1.8s backwards;
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 570px;
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s 1.8s forwards;
+    animation-delay: 1s;
+}
+
+.container.about-page,
+.container.contact-page {
+    
+    h1 {
+        font-size: 52px;
+        font-family: 'Gotham';
+        color: white;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
+
+        &:before {
+            // content: '<h1>';
+            font-family: sans-serif;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &:after {
+            // content: '<h1/>';
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;  
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    p {
+        font-style: 22px;
+        color: white;
+        font-family: 'Roboto';
+        font-weight: 400;
+        animation: fadeIn 1s 1.8s;
+        max-width: fit-content;
+
+        /* &:nth-of-0type(1) {
+            animation-delay: 1.1s;
+        }
+
+        &:nth-of-0type(2) {
+            animation-delay: 1.2s;
+        }
+
+        &:nth-of-0type(3) {
+            animation-delay: 1.3s;
+        } */
+    }
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        animation: fadeIn 1s 1.8s backwards;
+        font-size: 16px;
+    }
+
+    .text-animate-hover {
+        &.hover {
+            color: #ea7200
+        }
+    }
+}

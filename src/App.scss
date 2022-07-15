@@ -1,0 +1,49 @@
+$primary-color: #006d75;
+
+@import 'animate.css';
+// @import '~loaders.css/src/animations/pacman.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/GothamBook.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea {
+  font-family: 'Roboto';
+}
+
+// .loader-hidden {
+//   display: none;
+// }
+
+// .loader-active {
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+//   top: 0;
+//   bottom: 0;
+//   width: 50px;
+//   height: 50px;
+//   animation: fadeOut 1s 1s;
+//   animation-fill-mode: forwards;
+//   color: #ea7200;
+// }
